@@ -11,6 +11,17 @@
         <property name="dataSource" ref="dataSource" />
         <property name="jdbcTemplate" ref="jdbcTemplate" />
     </bean>
+
+    <bean id="taskDAO" class="com.tradeshift.tasks.TaskDAO" depends-on="userDAO">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+
+    <bean id = "userDAO" class="com.tradeshift.users.UserDAO">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg ref="dataSource"/>
     </bean>
@@ -20,4 +31,5 @@
         <property name="username" value="taskuser" />
         <property name="password" value="taskpassword" />
     </bean>
+
 </beans>

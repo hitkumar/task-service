@@ -16,13 +16,13 @@ We work iteratively, and we encourage team feedback as a driver of code quality 
 
 ## Use cases
 
-At the core, a task is simply a common todo item. Since tasks on Tradeshift are used to drive actions on the platform, our tasks are associated to other objects on the platform - e.g. a task to approve a received invoice, a task to validate a W-9 received by a supplier, a task to add additional information to my company profile, etc. Keep this model in mind as you design your Task Service.
+At the core, a taskCreateInput is simply a common todo item. Since tasks on Tradeshift are used to drive actions on the platform, our tasks are associated to other objects on the platform - e.g. a taskCreateInput to approve a received invoice, a taskCreateInput to validate a W-9 received by a supplier, a taskCreateInput to add additional information to my company profile, etc. Keep this model in mind as you design your Task Service.
 
 Some core use cases for a Task Service are:
 
-* As a Tradeshift API consumer, I want to create a task.
-* As a Tradeshift API consumer, I want to assign a task to a user.
-* As a Tradeshift API consumer, I want to complete a task.
+* As a Tradeshift API consumer, I want to create a taskCreateInput.
+* As a Tradeshift API consumer, I want to assign a taskCreateInput to a user.
+* As a Tradeshift API consumer, I want to complete a taskCreateInput.
 * As a Tradeshift API consumer, I want to fetch all tasks assigned to me.
 
 ## Get started
@@ -31,10 +31,10 @@ You should use this project as the base for your Task Service.
 
 ```sh
 # Clone the project
-$ git clone git@github.com:Tradeshift/interview-task-service.git
+$ git clone git@github.com:Tradeshift/interview-taskCreateInput-service.git
 
 # Get into the project directory
-$ cd interview-task-service
+$ cd interview-taskCreateInput-service
 
 # Assuming you have PostgreSQL setup locally
 # Get a postgres command prompt to create a database user
